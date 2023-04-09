@@ -1,0 +1,82 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Common */
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */ 
+.header {
+    padding: 20px 0;
+    background-color:#14dfbf;
+}
+
+.header .heading {
+    text-align: center;
+    color: red;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+/* Work */
+
+.works {
+    padding: 50px 0;
+    background-color: #9dff00;
+}
+
+.works .body {
+    display: flex;
+}
+
+.works .work-list {
+    width: 30%;
+}
+
+
+.works .work-list li {
+    margin-top: 28px;
+}
+
+.works .work-list li a {
+    color: #171100;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.works .img-block {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.works .img-block .img-1 {
+    width: 500px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.works .img-block .img-2 {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
