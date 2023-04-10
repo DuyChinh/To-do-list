@@ -1,4 +1,4 @@
-const checkbox = document.querySelectorAll('.myCheckbox');
+const checkbox = document.querySelectorAll(".myCheckbox");
 
 // Check if there is a saved state for the checkbox
 if (localStorage.getItem("myCheckboxState") === "checked") {
@@ -6,10 +6,13 @@ if (localStorage.getItem("myCheckboxState") === "checked") {
 }
 
 // Add a click event listener to the checkbox
-checkbox.addEventListener("click", function () {
-    // Save the checkbox state to local storage
-    localStorage.setItem(
-        "myCheckboxState",
-        checkbox.checked ? "checked" : "unchecked"
-    );
-});
+var arrayLength = checkbox.length;
+for (var i = 0; i < arrayLength; i++) {
+    checkbox[i].addEventListener("click", function () {
+        // Save the checkbox state to local storage
+        localStorage.setItem(
+            "myCheckboxState",
+            checkbox.checked ? "checked" : "unchecked"
+        );
+    });
+}
