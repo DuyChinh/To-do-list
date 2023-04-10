@@ -1,4 +1,4 @@
-const checkbox = document.getElementByClass(".myCheckbox");
+const checkbox = document.querySelectorAll(".myCheckbox");
 
 // Check if there is a saved state for the checkbox
 if (localStorage.getItem("myCheckboxState") === "checked") {
